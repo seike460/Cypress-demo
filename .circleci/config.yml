@@ -6,4 +6,3 @@ jobs:
 			- image: cypress/base:8
 	steps:
 	- checkout
-	- restore_cache
