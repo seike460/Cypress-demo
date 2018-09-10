@@ -6,3 +6,9 @@ jobs:
       - image: cypress/base:8
     steps:
       - checkout
+      - run:
+        name: yarn
+        command: yarn install
+      - run:
+        name: 清家はクビになってないか？
+        command: ./node_modules/.bin/cypress run -s cypress/integration/fusic/seike460_fusic.co.jp.js
