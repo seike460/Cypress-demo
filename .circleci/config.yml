@@ -10,9 +10,5 @@ jobs:
     parallelism: 1
     steps:
       - checkout
-      - run:
-        name: yarn install
-        command: yarn install
-      - run:
-        name: test
-        command: ./node_modules/.bin/cypress run -s cypress/integration/fusic/seike460_fusic.co.jp.js
+      - run: yarn install
+      - run: ./node_modules/.bin/cypress run -s cypress/integration/fusic/seike460_fusic.co.jp.js
