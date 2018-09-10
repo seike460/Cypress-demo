@@ -1,0 +1,9 @@
+version: 2
+
+jobs:
+	build:
+		docker:
+			- image: cypress/base:8
+	steps:
+	- checkout
+	- restore_cache
